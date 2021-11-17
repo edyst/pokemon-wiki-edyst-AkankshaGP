@@ -1,0 +1,196 @@
+<html lang="en">
+
+<head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* css for flex 1 */
+    section {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-left: 50px;
+
+    }
+
+    section div {
+      padding: 20px;
+      width: 30%;
+
+    }
+
+    .flexone {
+      flex: 1;
+      line-height: 25px;
+
+    }
+
+    button {
+      text-align: center;
+      padding: 10px;
+      width: 200px;
+      background-color: #4992ca;
+      color: white;
+      border: none;
+    }
+
+    /* css for table */
+
+    th {
+      text-align: left;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid #8a8a8a;
+      border-collapse: collapse;
+
+
+    }
+
+    th {
+      color: black;
+      border: 1px solid #ddd;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+
+    h2 {
+      font-size: 45px;
+      text-align: center;
+    }
+
+    h4 {
+      text-align: center;
+
+    }
+
+    .flextwo {
+      flex: 2;
+    }
+
+    table {
+      color: #8a8a8a;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      width: 600px;
+      border-spacing: 40px;
+      border: 1px, solid;
+      border-color: #ddd;
+    }
+
+    .footer {
+      display: flex;
+      align-items: right;
+      flex-direction: column;
+      justify-content: left;
+    }
+
+    .footer div {
+      font-weight: 450;
+      width: 55%;
+      margin: 0;
+      padding: 0;
+      margin-left: 300px;
+    }
+
+    .flexthree {
+      flex: 2;
+    }
+  </style>
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>Pokemon Battles</h2>
+  <h4>Here's a Pokémon Go type chart to get you started on what's effective against what.</h4>
+  <section>
+    <div class="flexone">
+      <h4>Type chart, effectiveness and weakness explained in Pokémon Go</h4>
+      <br>
+      <p>
+        Pokémon battles appear in most forms of Pokémon media, being the central gameplay aspect of the core series
+        games,
+        as well as being a constant focus of the anime.
+        <br>
+        <br>
+        Pokémon Go's Types are exactly the same as those in the main Pokémon games, but the effect of those type
+        matchups is
+        slightly different: in brief, things like effective or resisted attacks have slightly different multipliers to
+        the
+        main Pokémon games - although a December 2018 update brought them slightly closer in line.
+      </p>
+    </div>
+
+    <div class="flextwo">
+      <table>
+        <tr>
+          <th>Type</th>
+          <th>Strong Against</th>
+          <th>Weak Against</th>
+          <th>Resistant To</th>
+        </tr>
+
+        <tr>
+          <td>Normal</td>
+          <td>None</td>
+          <td>Rock,Ghost, Steel</td>
+          <td>Ghost</td>
+        </tr>
+
+
+        <tr>
+          <td>Fighting</td>
+          <td>Normal, Rock, Steel, Ice, Dark</td>
+          <td>Flying, Poison, Psychic, Bug, Ghost, Fairy</td>
+          <td>Rock, Bug, Dark</td>
+        </tr>
+        <tr>
+          <td>Flying</td>
+          <td>Fighting, Bug, Grass</td>
+          <td>Rock, Steel, Electric</td>
+          <td>Fighting, Ground, Bug, Grass</td>
+        </tr>
+        <tr>
+          <td>Poison</td>
+          <td> Grass,Fairy</td>
+          <td>Poison, Ground, Rock, Ghost, Steel</td>
+          <td>Fighting, Poison, Grass, Fairy</td>
+        </tr>
+        <tr>
+          <td>Ground</td>
+          <td> Poison, Rock, Steel, Fire, Electric</td>
+          <td>Flying, Bug, Grass</td>
+          <td>Poison, Rock, Electric</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="flexthree">
+      <p>Pokémon Go in 2020 continues to add new features, such the arrival of the Go Battle League, Remote Raids and
+      </p>
+      the trade evolution feature. There are also planned changes to PokéCoins on the way. Meanwhile, coming soon is</p>
+      the Johto Throwback quest.</p>
+    </div>
+  </section>
+  <div>
+    <p style="color: #4992ca; text-align: center; margin:20px; ">Book your tickets now.</p>
+    <center>
+      <button>Buy Now</button>
+    </center>
+  </div>
+</body>
+
+</html>
